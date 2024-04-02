@@ -1,0 +1,42 @@
+
+.gammatop{
+    height: 25vh;
+    border-bottom-right-radius: 8rem;
+    position:relative;
+    z-index: 0;
+  }
+
+
+
+
+.gammatop:before {
+    content: "";
+    position:absolute;
+    bottom:-12rem;
+    left:0rem;
+    height:12rem;
+    width: 12rem;
+    border-top-left-radius: 50%;
+    background:transparent;
+    z-index: 0;
+  }
+
+
+.gammatop:before {
+    box-shadow:-5rem  0  0  0 #DFE69A;
+    z-index: 0;
+ }
+
+
+ .gammacolor{
+    background-color: #DFE69A;
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.favtop{
+    height: 25vh;
+    border-bottom-right-radius: 8rem;
+    position:relative;
+    z-index: 0;
+  }
+
+
+
+.favtop:before {
+    content: "";
+    position:absolute;
+    bottom:-12rem;
+    left:0rem;
+    height:12rem;
+    width: 12rem;
+    border-top-left-radius: 50%;
+    background:transparent;
+    z-index: 0;
+  }
+
+
+.favtop:before {
+    box-shadow:-5rem  0  0  0 #F8E1F7;
+    z-index: 0;
+ }
+
+
+ .favcolor{
+    background-color: #F8E1F7;
+}
+
+
+
+
+
+
+
+
+
+
+
