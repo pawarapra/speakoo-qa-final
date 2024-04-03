@@ -18,6 +18,8 @@ import toilet from '../../assets/img/conver/toilet.png';
 import play from '../../assets/img/conver/play.png';
 import sleep from '../../assets/img/conver/sleep.png';
 
+const favorites = [];
+
 // Function to speak the text using Web Speech API
 const speakText = (text) => {
   const synth = window.speechSynthesis;
@@ -27,8 +29,11 @@ const speakText = (text) => {
 
 class Square extends React.Component {
   handleClick = () => {
-    const { speaktext } = this.props;
+    const { speaktext, text, id } = this.props;
     speakText(speaktext);
+
+    favorites.push(id);
+    console.log(favorites);
   };
 
   render() {
@@ -44,10 +49,12 @@ class Square extends React.Component {
   }
 }
 
+
+
 const data = [
-  { imageUrl: yes, text: "Yes", speaktext: "Yes" },
-  { imageUrl: no, text: "No", speaktext: "No" },
-  { imageUrl: thank, text: "Thank", speaktext: "Thank you" },
+  { imageUrl: yes, text: "Yes", speaktext: "Yes", id: 1},
+  { imageUrl: no, text: "No", speaktext: "No", id: 2},
+  { imageUrl: thank, text: "Thanks", speaktext: "Thank you" },
   { imageUrl: sorry, text: "Sorry", speaktext: "I'm sorry" },
   { imageUrl: hot, text: "Hot", speaktext: "It's hot" },
   { imageUrl: cold, text: "Cold", speaktext: "It's cold" },
@@ -63,7 +70,7 @@ export default function Alpha() {
   const navigate = useNavigate();
 
   const squares = data.map((item, index) => (
-    <Square key={index} imageUrl={item.imageUrl} text={item.text} speaktext={item.speaktext} />
+    <Square key={index} imageUrl={item.imageUrl} text={item.text} speaktext={item.speaktext} id={item.id}/>
   ));
 
   return (
