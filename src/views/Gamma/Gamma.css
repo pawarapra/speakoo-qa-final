@@ -32,7 +32,22 @@
     background-color: #DFE69A;
 }
 
+.square {
+  position: relative;
+  /* Add other necessary styles for the square */
+}
 
+.centerpic {
+  position: relative;
+  /* Add other necessary styles for centering content */
+}
+
+.star-button {
+  scale: 2.6;
+  position: absolute;
+  right: 0;
+  top: .5rem
+}
 
 
 
