@@ -108,7 +108,7 @@ class Square extends React.Component {
     const { imageUrl, text, fav, id } = this.props;
 
     return (
-      <div className={'square alphacolor col-4'} onClick={this.handleClick}>
+      <div className={'square favcolor col-4'} onClick={this.handleClick}>
         <div className={'centerpic'}>
           <img src={imageUrl} alt="Pic" className="centered-image"/>
           <h1>{text}</h1>
@@ -225,10 +225,10 @@ export default function Fav() {
 
                 <div className="home-icon" onClick={() => navigate('/')}>
 
-                    <FontAwesomeIcon icon={faChevronLeft} className="icon" />
+                    <FontAwesomeIcon icon={faChevronLeft} className="icon topChevron" />
                 </div>
                 <div className="middle-heading color-font">
-                    <h1>Favorite</h1>
+                    <h1>Favorites</h1>
                 </div>
             </div>
            
