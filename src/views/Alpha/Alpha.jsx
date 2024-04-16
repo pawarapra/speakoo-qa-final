@@ -89,8 +89,8 @@ class Square extends React.Component {
 
         <div className={'square alphacolor'} onClick={this.handleClick}>
           <div className={'centerpic'}>
-            <img src={imageUrl} alt="Pic" className="centered-image"/>
-            <h1>{text}</h1>
+            <img src={imageUrl} alt="Pic" className="centered-image cImage"/>
+            <h1 className='centered-text'>{text}</h1>
           </div>
             
         </div>
@@ -163,35 +163,38 @@ export default function Alpha() {
 
   return (
     <div className='container'>
-      <div className='alphatop alphacolor'>
-        <div className="home-icon" onClick={() => navigate('/')}>
-          <FontAwesomeIcon icon={faChevronLeft} className="icon topChevron" />
-        </div>
-        <div className="middle-heading color-font">
-          <h1>Basic <br />Conversation</h1>
-        </div>
-      </div>
+        <div className='commontop alphatop alphacolor'>
 
-      <div className='bottom container-inner'>
-        <div className="grid">
-          {squares}
-        </div>
-
-        <div className="button-wrapper">
-          <div className="otherpage-icon" onClick={() => navigate('/Gamma')}>
-            <div className="button-content-left button-color">
-              <FontAwesomeIcon icon={faChevronLeft} className="icon" />
-              <span>Food</span>
-            </div>
+          <div className="home-icon" onClick={() => navigate('/')}>
+            <FontAwesomeIcon icon={faChevronLeft} className="icon topChevron" />
           </div>
-          <div className="otherpage-icon" onClick={() => navigate('/Beta')}>
-            <div className="button-content-right button-color">
-              <span>Emotions</span>
-              <FontAwesomeIcon icon={faChevronRight} className="icon" /> 
+          <div className="middle-heading color-font">
+            <h1>Basic <br />Conversation</h1>
+          </div>
+        </div>
+
+        <div className='bottom'>
+
+            <div className="grid grid-middle">
+              {squares}
             </div>
-          </div>        
-        </div>        
-      </div>
+
+          <div className="button-wrapper">
+            <div className="otherpage-icon" onClick={() => navigate('/Gamma')}>
+              <div className="button-content-left button-color">
+                <FontAwesomeIcon icon={faChevronLeft} className="icon" />
+                <span>Food</span>
+              </div>
+            </div>
+            <div className="otherpage-icon" onClick={() => navigate('/Beta')}>
+              <div className="button-content-right button-color">
+                <span>Emotions</span>
+                <FontAwesomeIcon icon={faChevronRight} className="icon" /> 
+              </div>
+            </div>        
+          </div>
+
+        </div>
     </div>
   );
 }

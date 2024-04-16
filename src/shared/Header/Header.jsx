@@ -15,8 +15,8 @@ export default function Header() {
   return (
     <div className='container'>
       <div className='grid'>
-        <div className='col-0 col-1-sm col-2-md col-3-lg'></div>
-        <div className='col-12 col-10-sm col-8-md col-6-lg contain'>
+        <div className='col-0 col-1-sm col-1-md col-0-lg'></div>
+        <div className='col-12 col-10-sm col-10-md col-12-lg contain'>
           <div className='hometop'>
 
           <img src={headimg} alt="Image" className="head-image" />

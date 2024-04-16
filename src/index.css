@@ -80,7 +80,7 @@ em{
   
   
   .container {
-    max-width: 80rem;
+    max-width: 37rem;
     margin: 0 auto;
     padding: 0;
     
@@ -95,6 +95,7 @@ em{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 1rem;
+    margin: 0;
     padding: 0;
     width: 100%;
   }
@@ -184,8 +185,4 @@ em{
       .col-10-lg { display: grid; grid-column: span 10; }
       .col-11-lg { display: grid; grid-column: span 11; }
       .col-12-lg { display: grid; grid-column: span 12; }
-  }
-
-  .topChevron {
-    transform: translateY(5.8rem);
   }

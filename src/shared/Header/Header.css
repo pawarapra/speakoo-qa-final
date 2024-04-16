@@ -62,13 +62,13 @@
   aspect-ratio: 1;
   margin: 0 auto;
   text-align: center;
-  
+  z-index: 99;
   /* border: 1px solid black; */
 }
 
 .centered-image {
   margin: 0 auto;
-  max-width: 95%;
+  max-width: 100%;
   max-height: 75%;
 
   /* border: 1px solid black; */
@@ -82,7 +82,7 @@
 .link-text {
   display: block;
   /* margin-top: 0.2rem; */
-  font-size: calc(var(--mod1)*var(--fontBase));
+  font-size: calc(.9*var(--mod1)*var(--fontBase));
   color: #4E4F5E;
   text-decoration: none;
 
@@ -130,4 +130,121 @@
       var(--stroke-color),
     calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0
       var(--stroke-color);
+}
+
+/* -------------Common style to Alpha, Betta and Gamma------------- */
+
+.square {
+  position: relative;
+  aspect-ratio: 1;
+  padding-bottom: .1rem;
+  /* Add other necessary styles for the square */
+}
+
+.centerpic {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding-top: .5rem;
+  /* Add other necessary styles for centering content */
+}
+
+.star-button {
+
+  scale: 2.3;
+  position: absolute;
+  right: 0;
+  top: .5rem;
+  z-index: 99;
+
+}
+
+.emotion-container {
+  position: relative;
+ }
+
+ .centered-text {
+  font-size: calc(1*var(--fontBase));
+  width: 100%;
+  text-align: center;
+ }
+
+ .button-color {
+  font-size: calc(.8*var(--fontBase));
+  padding: 0;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;;
+
+ }
+
+ .button-wrapper {
+  padding-right: .2rem;
+  padding-left: .2rem;
+ }
+
+ .cImage {
+  height: 90%;
+ }
+
+.middle-heading > h1 {
+  padding-right: 2rem;
+  /* margin-top: 0.2rem; */
+  font-size: calc(2.1*var(--fontBase));
+  text-decoration: none;
+
+    --stroke-color: white;
+    --stroke-width: .2rem;
+
+    letter-spacing: var(--stroke-width);
+
+    text-shadow: var(--stroke-width) 0 0 var(--stroke-color),
+      calc(var(--stroke-width) * -1) 0 0 var(--stroke-color),
+      0 var(--stroke-width) 0 var(--stroke-color),
+      0 calc(var(--stroke-width) * -1) 0 var(--stroke-color);
+
+    text-shadow: calc(var(--stroke-width) * 1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * 1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * 0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * 0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * 0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -1) calc(var(--stroke-width) * 0) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * -0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0) calc(var(--stroke-width) * -1) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.3827) calc(var(--stroke-width) * -0.9239) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.7071) calc(var(--stroke-width) * -0.7071) 0
+      var(--stroke-color),
+    calc(var(--stroke-width) * 0.9239) calc(var(--stroke-width) * -0.3827) 0
+      var(--stroke-color);
+}
+
+.grid-middle {
+  gap: 2rem;
+  scale: .9;
+  transform: translateX(-2px);
+}
+
+.commontop, .bottom, .button-wrapper{
+  max-width: 37rem;;
 }

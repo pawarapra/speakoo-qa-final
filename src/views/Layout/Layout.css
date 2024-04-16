@@ -2,15 +2,16 @@
   
   
   
- 
+ body {
+  background-image: url('../../assets/img/gridbg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ }
 
 .content-container{
     margin: 0 auto;
-    background-image: url('../../assets/img/gridbg.png');
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
+
 }
 
 
@@ -23,9 +24,10 @@
   
   
   .home-icon{
-    padding-top: 7rem;
-    padding-left: 3rem;
-    font-size: 4rem;
+    padding-left: 1rem;
+    font-size: 3rem;
+    color: #7097CC; 
+    scale: .9; 
   }
   
   
@@ -41,7 +43,7 @@
   .square{
   height: auto;
   aspect-ratio: 1;
-  border-radius: 3rem;
+  border-radius: 20%;
   z-index: 1;
   display: flex;
   }
@@ -54,7 +56,7 @@
     font-size: 2rem;
 
     --stroke-color: white;
-    --stroke-width: 5px;
+    --stroke-width: 4px;
 
     letter-spacing: var(--stroke-width);
     
@@ -157,6 +159,7 @@
   .button-color{
     color: #FFE48A;
     background-color: #A5BCE3;
+    max-width: 12rem;
 }
 
 

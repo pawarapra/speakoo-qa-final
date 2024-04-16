@@ -221,7 +221,7 @@ export default function Fav() {
     
     return (
         <div className='container'>
-          <div className='favtop favcolor'>
+          <div className='commontop favtop favcolor'>
 
                 <div className="home-icon" onClick={() => navigate('/')}>
 
@@ -234,7 +234,7 @@ export default function Fav() {
            
 
             <div className='bottom container-inner'>
-                <div className="grid">
+                <div className="grid grid-middle">
                     
                     {squares}
  

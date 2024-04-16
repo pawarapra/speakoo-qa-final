@@ -86,10 +86,10 @@ class Square extends React.Component {
 
       <div className={"emotion-container col-4"}>
 
-        <div className={'square betacolor'} onClick={this.handleClick}>
+      <div className={'square betacolor'} onClick={this.handleClick}>
           <div className={'centerpic'}>
-            <img src={imageUrl} alt="Pic" className="centered-image"/>
-            <h1>{text}</h1>
+            <img src={imageUrl} alt="Pic" className="centered-image cImage"/>
+            <h1 className='centered-text'>{text}</h1>
           </div>
             
         </div>
@@ -161,6 +161,43 @@ export default function Beta() {
     
   return (
     <div className='container'>
+    <div className='commontop betatop betacolor'>
+
+      <div className="home-icon" onClick={() => navigate('/')}>
+        <FontAwesomeIcon icon={faChevronLeft} className="icon topChevron" />
+      </div>
+      <div className="middle-heading color-font">
+        <h1>Emotions</h1>
+      </div>
+      </div>
+
+      <div className='bottom'>
+
+          <div className="grid grid-middle">
+            {squares}
+          </div>
+
+        <div className="button-wrapper">
+          <div className="otherpage-icon" onClick={() => navigate('/Alpha')}>
+            <div className="button-content-left button-color">
+              <FontAwesomeIcon icon={faChevronLeft} className="icon" />
+              <span>Basic Conversation</span>
+            </div>
+          </div>
+          <div className="otherpage-icon" onClick={() => navigate('/Gamma')}>
+            <div className="button-content-right button-color">
+              <span>Food</span>
+              <FontAwesomeIcon icon={faChevronRight} className="icon" /> 
+            </div>
+          </div>        
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+{/* <div className='container'>
       <div className='betatop betacolor'>
         <div className="home-icon" onClick={() => navigate('/')}>
           <FontAwesomeIcon icon={faChevronLeft} className="icon topChevron" />
@@ -190,6 +227,4 @@ export default function Beta() {
           </div>        
         </div>        
       </div>
-    </div>
-  );
-}
+    </div> */}
