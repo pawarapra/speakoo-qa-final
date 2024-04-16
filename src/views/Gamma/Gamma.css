@@ -39,8 +39,6 @@
 
 .centerpic {
   position: relative;
-  height: 90%;
-  padding-top: 1rem;
   /* Add other necessary styles for centering content */
 }
 
@@ -48,14 +46,8 @@
   scale: 2.6;
   position: absolute;
   right: 0;
-  top: .5rem;
-  z-index: 99;
+  top: .5rem
 }
-
-.emotion-container {
-  position: relative;
- }
-
 
 
 
