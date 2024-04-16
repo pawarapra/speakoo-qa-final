@@ -12,6 +12,7 @@
 .content-container{
     margin: 0 auto;
 
+
 }
 
 
@@ -51,7 +52,7 @@
   .centerpic{
     flex-direction: column;
     align-items: center;
-    width: 70%;
+    aspect-ratio: 1;
     margin: auto;
     font-size: 2rem;
 
@@ -162,7 +163,6 @@
     max-width: 12rem;
 }
 
-
   .middle-heading {
     display: flex;
     justify-content: center; 
@@ -179,11 +179,8 @@
 
     .color-font{
         color: #7097CC; 
-        text-shadow:
-        5px 5px 0 #fff,
-        -5px 5px 0 #fff,
-        -5px -5px 0 #fff,
-        5px -5px 0 #fff;
     }
     
-
+.fullH {
+  height: 100vh;
+}

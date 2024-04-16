@@ -15,8 +15,8 @@ export default function Header() {
   return (
     <div className='container'>
       <div className='grid'>
-        <div className='col-0 col-1-sm col-1-md col-0-lg'></div>
-        <div className='col-12 col-10-sm col-10-md col-12-lg contain'>
+        <div className='col-0 col-1-sm col-1-md col-1-lg'></div>
+        <div className='col-12 col-10-sm col-10-md col-10-lg contain'>
           <div className='hometop'>
 
           <img src={headimg} alt="Image" className="head-image" />
@@ -30,7 +30,7 @@ export default function Header() {
                 <div className="image-container">
                   <img src={alphaimg} alt="Image" className="centered-image" />
 
-                <span className="link-text">
+                <span className="link-text2 link-text">
                   Basic <br />Conversation
                 </span>
                 </div>

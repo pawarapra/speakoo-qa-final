@@ -1,5 +1,6 @@
 {
   "name": "week12_working",
+  "homepage": "http://speakoo.jpmarinato.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -1,6 +1,6 @@
 :root{
-  --fontBase: clamp(1rem, 0.4681rem + 2.2695vi, 2rem);
-  --mod1: .9;
+  --fontBase: clamp(19px, 15.8085px + 0.8511vi, 25px);
+  --mod1: 1;
   --mod2: calc(var(--mod1)*var(--mod1));
   --mod3: calc(var(--mod2)*var(--mod1));
   --mod4: calc(var(--mod3)*var(--mod1));
@@ -10,7 +10,7 @@
 
 .hometop{
   position:relative;
-  height: 40vh;
+  height: 35vh;
   background-color: #A5BCE3;
   border-bottom-right-radius: 5rem;
   display: flex;
@@ -54,7 +54,8 @@
 .homesquare{
   aspect-ratio: 1;
   border-radius: 20%;
-  padding-top: .3rem;
+  padding: .3rem;
+
 }
 
 
@@ -63,13 +64,21 @@
   margin: 0 auto;
   text-align: center;
   z-index: 99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* border: 1px solid black; */
 }
 
 .centered-image {
+  margin: 0;
+  padding: 0;
+  padding-top: .2rem;
   margin: 0 auto;
   max-width: 100%;
   max-height: 75%;
+
 
   /* border: 1px solid black; */
 }
@@ -82,7 +91,8 @@
 .link-text {
   display: block;
   /* margin-top: 0.2rem; */
-  font-size: calc(.9*var(--mod1)*var(--fontBase));
+  padding-bottom: .5rem;
+  font-size: calc(var(--fontBase));
   color: #4E4F5E;
   text-decoration: none;
 
@@ -132,6 +142,10 @@
       var(--stroke-color);
 }
 
+.link-text2 {
+  font-size: calc(.8*var(--fontBase));
+}
+
 /* -------------Common style to Alpha, Betta and Gamma------------- */
 
 .square {
@@ -143,9 +157,6 @@
 
 .centerpic {
   position: relative;
-  height: 100%;
-  width: 100%;
-  padding-top: .5rem;
   /* Add other necessary styles for centering content */
 }
 
@@ -164,29 +175,35 @@
  }
 
  .centered-text {
-  font-size: calc(1*var(--fontBase));
+  margin: 0;
+  padding: 0;
+  font-size: calc(.9*var(--fontBase));
   width: 100%;
   text-align: center;
+  transform: translateY(-3px);
  }
 
  .button-color {
-  font-size: calc(.8*var(--fontBase));
+  font-size: calc(var(--fontBase));
   padding: 0;
-  padding-right: 2rem;
-  padding-left: 2rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;;
+  margin-bottom: 1rem;
 
+ }
+
+ .button-content-left {
+  padding-left: 1rem;
+  padding-right: 3rem;
+ }
+ .button-content-right {
+  padding-right: 1rem;
+  padding-left: 3rem;
  }
 
  .button-wrapper {
   padding-right: .2rem;
   padding-left: .2rem;
- }
-
- .cImage {
-  height: 90%;
  }
 
 .middle-heading > h1 {
@@ -240,7 +257,6 @@
 }
 
 .grid-middle {
-  gap: 2rem;
   scale: .9;
   transform: translateX(-2px);
 }
